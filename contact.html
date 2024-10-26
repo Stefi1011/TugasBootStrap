@@ -132,24 +132,7 @@
     <script>
       feather.replace();
     </script>
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form submission
-
-        // Check if the form is valid
-        if (this.checkValidity()) {
-          // Show the modal if the form is valid
-          var emailModal = new bootstrap.Modal(document.getElementById('emailModal'), {});
-          emailModal.show();
-
-          // Reset the form after showing the modal
-          this.reset();
-        } else {
-          // If form is invalid, show HTML5 validation feedback
-          this.reportValidity();
-        }
-      });
-    </script>
+    <script src="script.js"></script>
     
   </body>
 </html>
