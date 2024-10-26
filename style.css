@@ -1,0 +1,339 @@
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+    --red: #800000;
+    --red-shine: #982B1C;
+    --brown: #674636;
+    --dark-brown: #51382b;
+    --beige: #F7EED3;
+    --light-beige: #FFF8E8;
+}
+
+body {
+    background-color: var(--light-beige);
+}
+
+/* warna text custom */
+.red-text-color {
+    color: var(--red)
+}
+
+.red-shine-text-color {
+    color: var(--red-shine)
+}
+
+.brown-text-color {
+    color: var(--brown)
+}
+
+.beige-text-color {
+    color: var(--beige)
+}
+
+.light-beige-text-color {
+    color: var(--light-beige)
+}
+
+
+/* card animation custom */
+.zoom-shadow-1 {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.zoom-shadow-1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* background custom */
+.bg-beige {
+    background-color: var(--beige);
+}
+
+.bg-light-beige {
+    background-color: var(--light-beige);
+}
+
+.bg-brown{
+    background-color: var(--brown);
+}
+/* animation custom  */
+.hover-scale-zoom1 {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale-zoom1:hover{
+    transform: scale(1.1);
+}
+
+.hover-scale-zoom2 {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale-zoom2:hover{
+    transform: scale(1.02);
+}
+
+.hover-shadow1:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* button custom warna */
+.btn-brown {
+    background-color: var(--brown);
+    color:var(--beige)
+}
+
+.btn-brown:hover {
+    background-color: var(--dark-brown);
+    color:var(--light-beige)
+}
+
+.btn-red {
+    background-color: var(--red);
+    color: var(--beige);
+}
+
+.btn-red:hover {
+    background-color: var(--red-shine);
+    color: var(--beige);
+}
+
+/* navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover{
+    cursor: default;
+    color: var(--red);
+}
+
+/* welcome screen */
+.content-on-top {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 50%; 
+  z-index: 10;
+  color: var(--light-beige);
+  padding: 2rem; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 0.6rem; 
+}
+
+.content-on-top h2 {
+  font-weight: bold;
+  color: var(--beige);
+}
+
+.content-on-top h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.content-on-top p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Latest in Wellness */
+.latest-title {
+    padding-top: 2rem;
+}
+
+.wellness-title{
+    font-size: 1.2rem;
+}
+
+.wellness-title:hover {
+    color: var(--red);
+}
+
+/* fashion and trends */
+.card-img-top {
+    object-fit: cover;  
+    width: 100%;       
+    height: 15.6rem;     
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/* subscribe section */
+.subscribe-card {
+    background-color: var(--light-beige);
+}
+
+/* footer */
+footer {
+    background-color: var(--dark-brown)
+}
+
+.footer-lifestyle {
+    font-size: 1.5rem;
+}
+
+.footer-lifestyle:hover {
+    cursor:default
+}
+
+
+
+/* CONTACT */
+
+/* ABOUT */
+.hero-section {
+    position: relative;
+    background-image: url('assets/images/mindfullness.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.lifestyle-on-top {
+    top: 50%;
+}
+
+.about-title {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--beige); /* Customize accent color */
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: var(--accent-color); /* Customize color */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Mission */
+/* Explore */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+  
+.image-container img {
+    display: block;
+    object-fit: cover;
+}
+  
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+  
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+  
+.image-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.image-description {
+    font-size: 1rem;
+}
+  
+.explore button {
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid var(--orange);
+    cursor: pointer;
+}
+  
+.explore button:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+/* meet the team */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+    .hover-scale-zoom1:hover {
+        transform: scale(1.05); /* Smaller scale on mobile */
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem; /* Adjust padding */
+    }
+
+    .content-on-top {
+        top: 50%;
+    }
+
+    .welcome-title {
+        font-size: 2rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .welcome-title {
+        font-size: 1.6rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .content-on-top {
+        opacity: 0;
+    }
+
+    .image-title {
+        font-size: 1rem;
+    }
+
+    .image-description {
+        font-size:0.7rem;
+    }
+}
+
